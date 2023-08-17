@@ -21,6 +21,16 @@ class AbstractFactoryDemoTest {
 
     }
 
+    @Test
+    public void testShapeTwo() {
+        AbstractFactory abstractFactoryTestTwo = FactoryProducer.getFactory(false);
+        String shapeTestTwo = abstractFactoryTestTwo.getShape("RECTANGLE").draw();
+
+        String drawTwo = "Inside Rectangle draw()";
+        assertEquals(drawTwo,shapeTestTwo);
+
+    }
+
 
 
 
