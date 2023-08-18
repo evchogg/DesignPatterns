@@ -7,7 +7,7 @@ public class SingleObject {
         return instance;
     }
 
-    public void showMessage() {
-        System.out.println("Somethingobject");
+    public String showMessage() {
+        return "Somethingobject";
     }
 }
